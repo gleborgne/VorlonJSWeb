@@ -22,5 +22,6 @@ Vorlon server and proxy resides on different processes and could be deployed sep
 If you want to host a Vorlon instance with the proxy feature, their are a few configurations that you may find usefull :
 "vorlonServerURL" is used by the proxy to build the url of Vorlon client script
 "vorlonProxyURL" is used by the Vorlon server to send requests to the proxy
+"proxyEnvPort" if you host proxy separately, you may want it to use process.env.PORT instead of what resides in the config (for ex if you host the proxy in Azure website)
 
 if empty, "vorlonServerURL" and "vorlonProxyURL" default to localhost with the proper port.
